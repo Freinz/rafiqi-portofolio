@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Rafiqi - Delegasi Nanang Galuh Provinsi Kalimantan Selatan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --maroon: #800020;
+            --black: #1a1a1a;
+            --white: #ffffff;
+            --light-gold: #F4E4C1;
+            --dark-maroon: #5C0016;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: var(--black);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--gold);
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--maroon) 0%, var(--dark-maroon) 100%);
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><pattern id="p" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="rgba(212,175,55,0.1)" stroke-width="0.5"/></pattern><rect width="100" height="100" fill="url(%23p)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.1rem;
+            color: var(--light-gold);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .hero-text .title {
+            font-size: 0.95rem;
+            color: var(--white);
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .hero-text p {
+            color: var(--white);
+            font-size: 1.05rem;
+            margin-bottom: 35px;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--black);
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background: var(--light-gold);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--gold);
+            color: var(--black);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            border: 4px solid var(--gold);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--gold), var(--light-gold));
+            z-index: -1;
+            border-radius: 10px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            background: var(--black);
+            min-height: 500px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--maroon);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--gold);
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-top: 25px;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--white);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            background: #f0f0f0;
+            min-height: 400px;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: var(--maroon);
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .values {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .value-item {
+            padding: 20px;
+            background: var(--light-gold);
+            border-radius: 8px;
+            border-left: 4px solid var(--gold);
+        }
+
+        .value-item h4 {
+            color: var(--maroon);
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .value-item p {
+            font-size: 0.95rem;
+            color: #555;
+            margin: 0;
+        }
+
+        /* Programs Section */
+        .programs {
+            background: linear-gradient(to bottom, #f9f9f9, var(--white));
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .program-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--gold);
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .program-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .program-card h3 {
+            color: var(--maroon);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .program-card p {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .program-goal {
+            background: var(--light-gold);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .program-goal strong {
+            color: var(--maroon);
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            aspect-ratio: 1;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+            background: #e0e0e0;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(26, 26, 26, 0.9), transparent);
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay p {
+            color: var(--white);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* Achievements Section */
+        .achievements {
+            background: linear-gradient(135deg, var(--maroon) 0%, var(--dark-maroon) 100%);
+            color: var(--white);
+        }
+
+        .achievements .section-title h2 {
+            color: var(--gold);
+        }
+
+        .achievements .section-title p {
+            color: var(--light-gold);
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .achievement-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s;
+        }
+
+        .achievement-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--gold);
+        }
+
+        .achievement-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .achievement-card h3 {
+            color: var(--gold);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .achievement-card p {
+            color: var(--light-gold);
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--white);
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background: var(--light-gold);
+            border-radius: 10px;
+        }
+
+        .contact-icon {
+            font-size: 1.8rem;
+            color: var(--maroon);
+        }
+
+        .contact-item span {
+            font-size: 1.1rem;
+            color: var(--black);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--maroon);
+            color: var(--gold);
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: var(--gold);
+            color: var(--black);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .footer-logo {
+            color: var(--gold);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .footer-text {
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                background: rgba(26, 26, 26, 0.98);
+                flex-direction: column;
+                padding: 30px;
+                transition: left 0.3s;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .hero-content,
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .programs-grid,
+            .achievements-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .values {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">MR</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Profil</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#prestasi">Prestasi</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Muhammad Rafiqi</h1>
+                    <p class="subtitle">Delegasi Resmi Nanang Galuh Provinsi Kalimantan Selatan 2025</p>
+                    <p class="title">Perwakilan Kota Banjarmasin</p>
+                    <p>Seorang pemuda Banjarmasin yang aktif dalam pelestarian budaya Banjar, pengembangan pariwisata daerah, dan pemberdayaan generasi muda. Berkomitmen untuk mengangkat martabat Kalimantan Selatan melalui kepemimpinan yang berintegritas dan berlandaskan nilai-nilai luhur budaya lokal.</p>
+                    <div class="cta-buttons">
+                        <a href="#tentang" class="btn btn-primary">Profil Lengkap</a>
+                        <a href="#program" class="btn btn-secondary">Program Advokasi</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <img src="placeholder-hero.jpg" alt="Muhammad Rafiqi - Delegasi Nanang Galuh Kalsel">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Muhammad Rafiqi</h2>
+                <p>Mengenal lebih dekat sosok delegasi Kota Banjarmasin</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="placeholder-about.jpg" alt="Muhammad Rafiqi Formal">
+                </div>
+                <div class="about-text">
+                    <h3>Perjalanan Menjadi Delegasi</h3>
+                    <p>Muhammad Rafiqi merupakan putra asli Kota Banjarmasin yang memiliki passion mendalam terhadap pelestarian budaya Banjar dan pengembangan potensi daerah. Perjalanannya dimulai dari keterlibatan aktif dalam berbagai kegiatan kemasyarakatan hingga terpilih menjadi Wakil III Nanang Banjar Kota Banjarmasin 2025.</p>
+                    
+                    <p>Sebagai delegasi resmi pada ajang Pemilihan Nanang Galuh Provinsi Kalimantan Selatan 2025, Rafiqi membawa misi besar untuk memperkuat identitas budaya Banjar di tingkat provinsi dan nasional. Dengan latar belakang yang kuat dalam komunikasi publik dan kepemimpinan pemuda, ia siap menjadi duta yang menginspirasi generasi muda Kalimantan Selatan.</p>
+
+                    <div class="values">
+                        <div class="value-item">
+                            <h4>🎭 Budaya</h4>
+                            <p>Melestarikan dan mempromosikan warisan budaya Banjar</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>📚 Edukasi</h4>
+                            <p>Mengembangkan literasi dan pendidikan karakter pemuda</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>🎯 Kepemimpinan</h4>
+                            <p>Membentuk pemimpin muda yang berintegritas</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>💬 Komunikasi</h4>
+                            <p>Menjembatani aspirasi masyarakat dengan kebijakan</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px; padding: 25px; background: var(--maroon); color: var(--white); border-radius: 10px;">
+                        <h4 style="color: var(--gold); margin-bottom: 10px; font-size: 1.2rem;">Visi sebagai Calon Nanang Provinsi</h4>
+                        <p style="margin: 0; line-height: 1.8;">"Memperkuat identitas budaya Banjar dan memperluas peran pemuda dalam memajukan Kalimantan Selatan menuju daerah yang lebih berdaya, berbudaya, dan berdaya saing."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="program" class="programs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Program Advokasi</h2>
+                <p>Empat pilar program untuk memajukan Kalimantan Selatan</p>
+            </div>
+            <div class="programs-grid">
+                <!-- Program 1 -->
+                <div class="program-card">
+                    <div class="program-icon">🎨</div>
+                    <h3>Banjar Youth Cultural Movement</h3>
+                    <p>Program pembinaan generasi muda tentang budaya Banjar melalui workshop seni tradisional, kelas bahasa Banjar, dokumentasi warisan budaya, dan pertunjukan seni. Program ini bertujuan memastikan budaya Banjar tetap hidup dan relevan di era modern.</p>
+                    <p>Kegiatan meliputi pelatihan tari tradisional, musik panting dan kuriding, pembuatan kerajinan sasirangan, serta kompetisi kreativitas berbasis budaya lokal.</p>
+                    <div class="program-goal">
+                        <strong>Tujuan:</strong> Menciptakan 1000 agen budaya muda yang aktif melestarikan dan mempromosikan budaya Banjar dalam 2 tahun.
+                    </div>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="program-card">
+                    <div class="program-icon">📸</div>
+                    <h3>Kalsel Tourism Storytelling</h3>
+                    <p>Kampanye digital untuk mengenalkan destinasi wisata Kalimantan Selatan menggunakan narasi kreatif, fotografi berkualitas tinggi, dan video pendek yang engaging. Program ini memanfaatkan kekuatan media sosial untuk mempromosikan pariwisata daerah.</p>
+                    <p>Konten mencakup wisata alam, kuliner khas, situs sejarah, dan pengalaman budaya autentik yang dikemas secara modern dan menarik bagi semua kalangan.</p>
+                    <div class="program-goal">
+                        <strong>Tujuan:</strong> Meningkatkan awareness wisata Kalsel secara nasional dan menarik 50.000 wisatawan baru melalui kampanye digital.
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="program-card">
+                    <div class="program-icon">💪</div>
+                    <h3>Pemuda Berdaya, Banua Maju</h3>
+                    <p>Gerakan pemberdayaan pemuda komprehensif yang mencakup literasi digital, public speaking, pengembangan karakter, dan pelatihan kepemimpinan. Program ini dirancang untuk mempersiapkan pemuda Kalsel menghadapi tantangan global.</p>
+                    <p>Meliputi bootcamp keterampilan, mentoring oleh tokoh sukses, kompetisi debat, dan program magang di berbagai sektor strategis.</p>
+                    <div class="program-goal">
+                        <strong>Tujuan:</strong> Membentuk 500 pemuda berprestasi yang siap menjadi pemimpin masa depan di berbagai bidang.
+                    </div>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="program-card">
+                    <div class="program-icon">🏪</div>
+                    <h3>UMKM Lokal Naik Kelas</h3>
+                    <p>Kolaborasi dengan pelaku UMKM kuliner dan kerajinan di Kalimantan Selatan untuk program promosi, branding, edukasi pemasaran digital, dan akses pasar yang lebih luas. Program ini membantu UMKM bertransformasi menuju bisnis modern.</p>
+                    <p>Mencakup pelatihan manajemen bisnis, desain kemasan, strategi media sosial, dan pameran produk lokal untuk memperluas jangkauan pasar.</p>
+                    <div class="program-goal">
+                        <strong>Tujuan:</strong> Meningkatkan pendapatan 200 UMKM lokal minimal 50% dan membuka akses pasar regional hingga nasional.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galeri Kegiatan</h2>
+                <p>Dokumentasi perjalanan dan kegiatan Muhammad Rafiqi</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="placeholder-gallery1.jpg" alt="Kompetisi Nanang Banjarmasin">
+                    <div class="gallery-overlay">
+                        <p>Kompetisi Nanang Banjarmasin 2025</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-gallery2.jpg" alt="Kegiatan Budaya">
+                    <div class="gallery-overlay">
+                        <p>Workshop Budaya Banjar</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-gallery3.jpg" alt="Foto Formal">
+                    <div class="gallery-overlay">
+                        <p>Pemotretan Resmi Delegasi</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-gallery4.jpg" alt="Aktivitas Publik">
+                    <div class="gallery-overlay">
+                        <p>Kegiatan Sosial Kemasyarakatan</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-gallery5.jpg" alt="Acara Budaya">
+                    <div class="gallery-overlay">
+                        <p>Festival Budaya Kalimantan Selatan</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-gallery6.jpg" alt="Kegiatan Pariwisata">
+                    <div class="gallery-overlay">
+                        <p>Promosi Wisata Lokal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="prestasi" class="achievements">
+        <div class="container">
+            <div class="section-title">
+                <h2>Prestasi & Pengalaman</h2>
+                <p>Jejak rekam perjalanan dan pencapaian</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎖️</div>
+                    <h3>Delegasi Resmi Pemilihan Nanang Galuh Provinsi</h3>
+                    <p>Mewakili Kota Banjarmasin pada ajang Pemilihan Nanang Galuh Provinsi Kalimantan Selatan 2025, membawa aspirasi dan harapan masyarakat Banjarmasin untuk bersinar di tingkat provinsi.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">🤝</div>
+                    <h3>Aktivis Organisasi & Kegiatan Sosial</h3>
+                    <p>Aktif dalam berbagai organisasi kepemudaan dan kegiatan sosial kemasyarakatan. Berkontribusi dalam program pemberdayaan masyarakat, kegiatan kemanusiaan, dan pengembangan komunitas lokal di Banjarmasin.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎭</div>
+                    <h3>Kontributor Budaya & Pariwisata</h3>
+                    <p>Berpartisipasi aktif dalam berbagai acara budaya dan promosi pariwisata Kalimantan Selatan. Menjadi narasumber dan fasilitator dalam workshop budaya, serta berkolaborasi dengan komunitas seni lokal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Saya</h2>
+                <p>Mari terhubung dan berkolaborasi untuk Kalimantan Selatan yang lebih baik</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">👤</div>
+                        <span><strong>Muhammad Rafiqi</strong></span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <span>Instagram: @mhmmdrafiqial</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <span>rafiqi.nanang@kalsel.id</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <span>Kota Banjarmasin, Kalimantan Selatan</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://instagram.com/mhmmdrafiqial" target="_blank" class="social-link" title="Instagram">📷</a>
+                    <a href="mailto:rafiqi.nanang@kalsel.id" class="social-link" title="Email">✉️</a>
+                    <a href="#" class="social-link" title="WhatsApp">💬</a>
+                </div>
+
+                <a href="mailto:rafiqi.nanang@kalsel.id" class="btn btn-primary" style="margin-top: 30px;">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Muhammad Rafiqi</div>
+                <p class="footer-text">Delegasi Resmi Nanang Galuh Provinsi Kalimantan Selatan 2025</p>
+                <p class="footer-text">Perwakilan Kota Banjarmasin</p>
+                <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #333;">
+                    <p class="footer-text">&copy; 2025 Muhammad Rafiqi. All Rights Reserved.</p>
+                    <p class="footer-text" style="font-size: 0.85rem; margin-top: 10px;">Memperkuat Identitas Budaya Banjar untuk Kalimantan Selatan yang Lebih Maju</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu after click
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        let lastScroll = 0;
+        const nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                nav.style.boxShadow = '0 2px 10px rgba(0,0,0,0.3)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.program-card, .achievement-card, .gallery-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Gallery lightbox effect (optional enhancement)
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Simple zoom effect
+                this.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 300);
+            });
+        });
+
+        // Add loading state for images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+            img.style.transition = 'opacity 0.3s';
+            img.style.opacity = '0.7';
+        });
+    </script>
+</body>
+</html>="achievement-icon">🏆</div>
+                    <h3>Wakil III Nanang Banjar Kota Banjarmasin 2025</h3>
+                    <p>Terpilih sebagai Wakil III pada kompetisi Nanang Banjar tingkat Kota Banjarmasin tahun 2025, meraih kepercayaan dewan juri dan masyarakat atas dedikasi terhadap budaya dan kepemimpinan yang ditunjukkan.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class
+
+                                       <div style="margin-top: 30px; padding: 25px; background: var(--maroon); color: var(--white); border-radius: 8px;">
+    <strong>Misi Delegasi:</strong> Siap menjadi representasi budaya Banjar yang modern namun tetap berkarakter.
+</div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="programs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Program Advokasi</h2>
+                <p>Inisiatif utama yang diusung oleh Muhammad Rafiqi</p>
+            </div>
+
+            <div class="programs-grid">
+
+                <div class="program-card">
+                    <div class="program-icon">🌐</div>
+                    <h3>Digitalisasi Budaya Banjar</h3>
+                    <p>Program ini bertujuan mengenalkan budaya Banjar melalui konten digital yang menarik, mulai dari sejarah, tata krama, pakaian adat, bahasa Banjar, hingga kuliner khas.</p>
+                    <div class="program-goal">
+                        <strong>Tujuan:</strong> Meningkatkan literasi budaya generasi muda.
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon">🎓</div>
+                    <h3>Rumah Belajar Pemuda</h3>
+                    <p>Inisiatif untuk menciptakan ruang edukatif bagi remaja dan pemuda berupa kelas publik, pelatihan kepemimpinan, serta pengembangan soft skill.</p>
+                    <div class="program-goal">
+                        <strong>Tujuan:</strong> Mempersiapkan pemuda yang percaya diri & kompetitif.
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon">🏞️</div>
+                    <h3>Ekowisata Berkelanjutan</h3>
+                    <p>Rafiqi menggagas pemanfaatan potensi wisata alam & sungai di Banjarmasin dengan pendekatan berkelanjutan dan berbasis masyarakat.</p>
+                    <div class="program-goal">
+                        <strong>Tujuan:</strong> Meningkatkan daya tarik wisata lokal.
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon">🤝</div>
+                    <h3>Pemberdayaan UMKM Lokal</h3>
+                    <p>Program pendampingan dan promosi UMKM Banjar melalui platform digital, kolaborasi komunitas, serta pelatihan branding.</p>
+                    <div class="program-goal">
+                        <strong>Tujuan:</strong> Menguatkan ekonomi kreatif daerah.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galeri Kegiatan</h2>
+                <p>Momen perjalanan dan aktivitas Muhammad Rafiqi</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="placeholder1.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder2.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="prestasi" class="achievements">
+        <div class="container">
+            <div class="section-title">
+                <h2>Prestasi & Pencapaian</h2>
+                <p>Jejak pengalaman dan kontribusi bagi daerah</p>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏅</div>
+                    <h3>Wakil III Nanang Banjar</h3>
+                    <p>Terpilih sebagai Wakil III Nanang Banjar Kota Banjarmasin 2025.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎤</div>
+                    <h3>Duta Publik & MC</h3>
+                    <p>Aktif sebagai pembawa acara formal dan budaya pada berbagai kegiatan kota.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">📚</div>
+                    <h3>Aktivis Pendidikan</h3>
+                    <p>Terlibat dalam program literasi dan edukasi bagi anak dan remaja.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">🌏</div>
+                    <h3>Penggerak Pariwisata</h3>
+                    <p>Berperan dalam promosi destinasi wisata lokal berbasis budaya Banjar.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kontak & Media Sosial</h2>
+                <p>Hubungi atau ikuti perjalanan Muhammad Rafiqi</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <span>+62 8xxx xxxx xxx</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <span>email@example.com</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <span>Banjarmasin, Kalimantan Selatan</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link">IG</a>
+                    <a href="#" class="social-link">FB</a>
+                    <a href="#" class="social-link">TT</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">MR</div>
+            <div class="footer-text">
+                © 2025 Muhammad Rafiqi — Delegasi Nanang Galuh Provinsi Kalimantan Selatan.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
